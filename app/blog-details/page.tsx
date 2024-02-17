@@ -1,6 +1,8 @@
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import blogAuthor2 from "/public/images/blog/author-02.png";
+import blogDetail2 from "/public/images/blog/blog-details-02.jpg";
 
 import { Metadata } from "next";
 
@@ -27,8 +29,8 @@ const BlogDetailsPage = () => {
                     <div className="mb-5 mr-10 flex items-center">
                       <div className="mr-4">
                         <div className="relative h-10 w-10 overflow-hidden rounded-full">
-                          <Image
-                            src="/images/blog/author-02.png"
+                          <ExportedImage
+                            src={blogAuthor2}
                             alt="author"
                             fill
                           />
@@ -110,8 +112,8 @@ const BlogDetailsPage = () => {
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
-                      <Image
-                        src="/images/blog/blog-details-02.jpg"
+                      <ExportedImage
+                        src={blogDetail2}
                         alt="image"
                         fill
                         className="object-cover object-center"

@@ -1,6 +1,8 @@
 "use client";
 
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import videoImg from "/public/images/video/video.jpg";
+
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 
@@ -26,7 +28,7 @@ const Video = () => {
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill />
+                <ExportedImage src={videoImg} alt="video image" fill />
                 <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                   <button
                     aria-label="video play button"

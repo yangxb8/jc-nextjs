@@ -2,7 +2,10 @@ import RelatedPost from "@/components/Blog/RelatedPost";
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import blogAuthor2 from "/public/images/blog/author-02.png";
+import blogDetail1 from "/public/images/blog/blog-details-01.jpg";
+
 
 import { Metadata } from "next";
 
@@ -29,8 +32,8 @@ const BlogSidebarPage = () => {
                     <div className="mb-5 mr-10 flex items-center">
                       <div className="mr-4">
                         <div className="relative h-10 w-10 overflow-hidden rounded-full">
-                          <Image
-                            src="/images/blog/author-02.png"
+                          <ExportedImage
+                            src={blogAuthor2}
                             alt="author"
                             fill
                           />
@@ -112,8 +115,8 @@ const BlogSidebarPage = () => {
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
-                      <Image
-                        src="/images/blog/blog-details-01.jpg"
+                      <ExportedImage
+                        src={blogDetail1}
                         alt="image"
                         fill
                         className="h-full w-full object-cover object-center"

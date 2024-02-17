@@ -1,4 +1,6 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import aboutImg from "/public/images/about/about-image.svg";
+import aboutImgDart from "/public/images/about/about-image-dark.svg";
 import SectionTitle from "../Common/SectionTitle";
 
 const checkIcon = (
@@ -54,14 +56,14 @@ const AboutSectionOne = () => {
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
                 data-wow-delay=".2s"
               >
-                <Image
-                  src="/images/about/about-image.svg"
+                <ExportedImage
+                  src={aboutImg}
                   alt="about-image"
                   fill
                   className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
-                <Image
-                  src="/images/about/about-image-dark.svg"
+                <ExportedImage
+                  src={aboutImgDart}
                   alt="about-image"
                   fill
                   className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"

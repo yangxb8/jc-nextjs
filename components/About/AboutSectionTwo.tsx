@@ -1,4 +1,6 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import aboutImg2 from "/public/images/about/about-image-2.svg";
+import aboutImg2Dark from "/public/images/about/about-image-2-dark.svg";
 
 const AboutSectionTwo = () => {
   return (
@@ -10,14 +12,14 @@ const AboutSectionTwo = () => {
               className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
               data-wow-delay=".15s"
             >
-              <Image
-                src="/images/about/about-image-2.svg"
+              <ExportedImage
+                src={aboutImg2}
                 alt="about image"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
-              <Image
-                src="/images/about/about-image-2-dark.svg"
+              <ExportedImage
+                src={aboutImg2Dark}
                 alt="about image"
                 fill
                 className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
